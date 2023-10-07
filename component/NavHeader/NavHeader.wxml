@@ -1,0 +1,10 @@
+<view class="header">
+  <text class="title">{{title}}</text>
+  <view>
+    <text>{{nav}}</text>
+    <van-button round type="info" class="more" size="small" color="#e2ede5">
+      <text>查看更多</text>
+      <van-icon name="plus" />
+    </van-button>
+  </view>
+</view>

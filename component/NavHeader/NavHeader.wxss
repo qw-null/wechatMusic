@@ -1,0 +1,24 @@
+.header{
+  margin-bottom: 10rpx;
+  overflow: hidden;
+}
+.header .title {
+  font-size: 32rpx;
+  line-height: 50rpx;
+  color: #666;
+}
+
+.more {
+  float: right;
+  color: #69ad76;
+  font-weight: 700;
+}
+
+.more text {
+  color: #4faf70;
+}
+
+.more van-icon {
+  margin-left: 2rpx;
+  color: #4faf70;
+}
