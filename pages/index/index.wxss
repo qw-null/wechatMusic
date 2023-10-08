@@ -101,14 +101,8 @@
     border-radius: 6rpx;
 }
 
-.musicItem .count{
-    width: 100rpx;
-    height: 100rpx;
-    text-align: center;
-    line-height: 100rpx;
-}
 .musicItem .musicname{
-    width: 100rpx;
+    margin-left: 30rpx;
     height: 100rpx;
     line-height: 100rpx;
 }
