@@ -1,10 +1,37 @@
 {
-  "pages": ["pages/index/index"],
+  "pages": [
+    "pages/video/video",
+    "pages/login/login",
+    "pages/index/index",
+    "pages/personal/personal"
+  ],
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#f3f8f5",
     "navigationBarTitleText": "🎵 空值音乐 🎵",
     "navigationBarTextStyle": "black"
   },
-  "sitemapLocation": "sitemap.json"
+  "sitemapLocation": "sitemap.json",
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "主页",
+        "iconPath": "/static/images/tabs/home.png",
+        "selectedIconPath": "/static/images/tabs/home-active.png"
+      },
+      {
+        "pagePath": "pages/video/video",
+        "text": "视频",
+        "iconPath": "/static/images/tabs/video.png",
+        "selectedIconPath": "/static/images/tabs/video-active.png"
+      },
+      {
+        "pagePath": "pages/personal/personal",
+        "text": "个人中心",
+        "iconPath": "/static/images/tabs/person.png",
+        "selectedIconPath": "/static/images/tabs/person-active.png"
+      }
+    ]
+  }
 }

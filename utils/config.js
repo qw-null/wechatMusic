@@ -2,4 +2,5 @@
 
 export default {
   BaseURL: "http://localhost:3000",
+  MobileHost: "http://35qauu.natappfree.cc",
 };

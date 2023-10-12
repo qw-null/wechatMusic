@@ -34,11 +34,10 @@ Page({
         name: tempTopList.playlist.name,
         tracks: tempTopList.playlist.tracks.slice(0, 3),
       });
+      this.setData({
+        topList: topListArr,
+      });
     }
-    this.setData({
-      topList: topListArr,
-    });
-    console.log("aaaaa", this.data.topList);
   },
 
   /**

@@ -8,9 +8,20 @@ export default (url, data = {}, method = "GET") => {
       url: config.BaseURL + url,
       data,
       method,
+      // header: {
+      //   cookie: wx
+      //     .getStorageSync("cookies")
+      //     .find((item) => item.indexOf("MUSIC_U")),
+      // },
       success: (res) => {
         console.log("success", res.data);
-
+        if (data.isLogin) {
+          // 表明是登录请求
+          wx.setStorage({
+            key: "cookies",
+            data: res.cookies,
+          });
+        }
         resolve(res.data);
       },
       fail: (err) => {
